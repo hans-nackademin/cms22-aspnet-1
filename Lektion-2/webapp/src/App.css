@@ -24,6 +24,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "logo menulinkicons";
+  padding: 10px 0;
 }
 .header .logo {
   grid-area: logo;
@@ -90,4 +91,17 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
+}
+.showcase {
+  background: #f3f3f3;
+  background: linear-gradient(90deg, #f3f3f3 0%, #f5f5f5 100%);
+}
+.showcase .container {
+  height: 833px;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase .container img {
+  width: auto;
+  height: 100%;
 }

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo menulinkicons";
+    padding: 10px 0;
 
     .logo {
         grid-area: logo;

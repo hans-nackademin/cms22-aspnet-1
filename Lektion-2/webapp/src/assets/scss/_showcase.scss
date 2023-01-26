@@ -1,0 +1,18 @@
+.showcase {
+
+    background: $color-linear-gradient-dark;
+    background: linear-gradient(90deg, $color-linear-gradient-dark 0%, $color-linear-gradient-light 100%);
+
+    .container {
+        height: 833px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+
+}
