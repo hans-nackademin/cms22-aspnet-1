@@ -1,0 +1,80 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo menulinkicons";
+
+    .logo {
+        grid-area: logo;
+        font-size: 35px;
+        font-weight: 700;
+        color: $color-dark;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu {
+        grid-area: menu;
+        display:none;
+        height: 100%;
+        overflow: hidden;
+
+        .menu-link {
+            display: block;
+            margin: 15px;
+            color: $color-dark;
+            font-weight: 500;
+
+            &:hover {
+                color: $color-theme;
+                text-decoration: none;
+            }
+        }
+
+        .active {
+            color: $color-theme;
+            text-decoration: none;
+        }
+    }
+
+    .menulinkicons {
+        grid-area: menulinkicons;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .menu-link {
+            background-color: $color-white;
+            color: $color-dark;
+            height: 36px;
+            width: 36px;
+            box-shadow: 0 0 6px 4px $color-shadow;
+            border-radius: 50%;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-dark;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "logo menu menulinkicons";
+
+        .menu {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

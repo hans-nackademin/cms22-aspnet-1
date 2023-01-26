@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222529;
+}
+
+a {
+  color: #ff7373;
+  text-decoration: none;
+  transition: all 0.05s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1680px;
+  }
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "logo menulinkicons";
+}
+.header .logo {
+  grid-area: logo;
+  font-size: 35px;
+  font-weight: 700;
+  color: #222529;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header .menu {
+  grid-area: menu;
+  display: none;
+  height: 100%;
+  overflow: hidden;
+}
+.header .menu .menu-link {
+  display: block;
+  margin: 15px;
+  color: #222529;
+  font-weight: 500;
+}
+.header .menu .menu-link:hover {
+  color: #ff7373;
+  text-decoration: none;
+}
+.header .menu .active {
+  color: #ff7373;
+  text-decoration: none;
+}
+.header .menulinkicons {
+  grid-area: menulinkicons;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .menulinkicons .menu-link {
+  background-color: #ffffff;
+  color: #222529;
+  height: 36px;
+  width: 36px;
+  box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+.header .menulinkicons .menu-link:hover {
+  color: #ffffff;
+  background-color: #222529;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo menu menulinkicons";
+  }
+  .header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
