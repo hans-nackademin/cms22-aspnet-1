@@ -8,7 +8,19 @@
         display: flex;
         justify-content: space-between;
 
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            .titles {
+                margin-left: 150px;
+            }
+        }
+
         img {
+            flex: 1;
             width: auto;
             height: 100%;
         }

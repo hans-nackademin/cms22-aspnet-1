@@ -1,0 +1,94 @@
+.product-grid {
+    .container {
+        max-width: 1110px;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+
+        .card-img-container {
+            display: grid;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 270px;
+                object-fit: cover;
+            }
+
+            .card-menu {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: block;
+
+                .menu-link {
+                    background-color: $color-white;
+                    color: $color-dark;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    margin-bottom: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    box-shadow: 0 0 6px 4px $color-shadow;
+                    outline: none;
+
+                    &:hover {
+                        background-color: $color-dark;
+                        color: $color-white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .btn-theme {
+                position: absolute;
+                bottom: 0;
+                
+                
+            }
+        }
+
+        .card-body {
+            text-align: center;
+
+            .card-category {
+                font-size: 16px;
+                font-weight: 500;
+                color: $color-gray;
+            }
+
+            .card-title {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+
+            .card-price {
+                margin-top: 1rem;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        &:hover {
+            .card-menu {
+                display: block !important;
+            }
+            .btn-theme {
+                display: block !important;
+            }
+        }
+    }
+}
