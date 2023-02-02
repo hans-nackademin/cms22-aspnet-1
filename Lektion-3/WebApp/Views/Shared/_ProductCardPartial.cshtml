@@ -1,0 +1,19 @@
+﻿<div class="col">
+    <div class="card">
+        <div class="card-img-container">
+            <img src="~/images/black-dress.png" class="card-img-top" alt="..." />
+            <div class="card-menu d-xl-none">
+            <button class="menu-link"><i class="fa-regular fa-heart"></i></button>
+            <button class="menu-link"><i class="fa-regular fa-code-compare"></i></button>
+            <button class="menu-link"><i class="fa-regular fa-bag-shopping"></i></button>
+            </div>
+            <a asp-controller="Products" asp-action="Details" asp-route-id="1" class="btn btn-theme w-100 d-xl-none">QUICK VIEW</a>
+        </div>
+        <div class="card-body">
+            <p class="card-category">Jackets</p>
+            <h5 class="card-title">Blue Jacket</h5>
+            <partial name="_RatingPartial" />
+            <p class="card-price">5000</p>
+        </div>
+    </div>
+</div>
