@@ -1,0 +1,14 @@
+﻿@model ProductGridViewModel
+
+<section class="product-grid">
+    <div class="container">
+        <div class="title">@Model.Title</div>
+
+        <div class="row row-cols-1 row-cols-md-@Model.Columns g-4">
+            @foreach(var item in Model.Items)
+            {
+                <partial name="~/Views/Shared/Partials/Products/ProductCard.cshtml" model="item" />
+            }
+        </div>
+    </div>
+</section>
