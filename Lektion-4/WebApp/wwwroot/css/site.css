@@ -90,7 +90,7 @@ a {
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "logo menulinkicons";
+    grid-template-areas: "logo menuicons";
     padding: 10px 0;
 }
 
@@ -106,7 +106,7 @@ a {
     }
 
     .header .menu-links {
-        grid-area: menu;
+        grid-area: menulinks;
         display: none;
         height: 100%;
         overflow: hidden;
@@ -126,7 +126,7 @@ a {
             }
 
     .header .menu-icons {
-        grid-area: menulinkicons;
+        grid-area: menuicons;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -158,10 +158,10 @@ a {
 @media (min-width: 1200px) {
     .header {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "logo menu menulinkicons";
+        grid-template-areas: "logo menulinks menuicons";
     }
 
-        .header .menu {
+        .header .menu-links {
             display: flex;
             justify-content: center;
             align-items: center;

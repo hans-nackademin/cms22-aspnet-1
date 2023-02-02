@@ -1,0 +1,31 @@
+﻿@{
+    var menulinks = new NavLinksViewModel
+    {
+        ClassName = "menu-links",
+        Links = new List<NavLinkModel>
+        {
+            new NavLinkModel { ControllerName = "Home", ActionName = "Index", LinkName = "Home" },
+            new NavLinkModel { ControllerName = "Products", ActionName = "Index", LinkName = "Products" },
+            new NavLinkModel { ControllerName = "Contacts", ActionName = "Index", LinkName = "Contacts" }
+        }
+    };
+
+    var menuicons = new NavLinksViewModel
+    {
+        ClassName = "menu-icons",
+        Links = new List<NavLinkModel>
+        {
+            new NavLinkModel { ControllerName = "Search", ActionName = "Index", LinkName = "<i class=\"fa-regular fa-search\"></i>" },
+            new NavLinkModel { ControllerName = "Products", ActionName = "Compare", LinkName = "<i class=\"fa-regular fa-code-compare\"></i>" },
+            new NavLinkModel { ControllerName = "ShoppingCart", ActionName = "WishList", LinkName = "<i class=\"fa-regular fa-heart\"></i>" },
+            new NavLinkModel { ControllerName = "ShoppingCart", ActionName = "Index", LinkName = "<i class=\"fa-regular fa-bag-shopping\"></i>" }
+        }
+    };
+}
+
+
+<header class="header container">
+    <div class="logo">FIXXO.</div>
+    <partial name="~/Views/Shared/Partials/Navigation/_NavLinks.cshtml" model="@menulinks" />
+    <partial name="~/Views/Shared/Partials/Navigation/_NavLinks.cshtml" model="@menuicons" />
+</header>

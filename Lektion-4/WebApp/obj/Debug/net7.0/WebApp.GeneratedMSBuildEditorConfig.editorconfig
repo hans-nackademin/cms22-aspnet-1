@@ -20,8 +20,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Shared/Partials/Navigation/_MenuLink.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXE5hdmlnYXRpb25cX01lbnVMaW5rLmNzaHRtbA==
+[C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Shared/Partials/Navigation/_Links.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXE5hdmlnYXRpb25cX0xpbmtzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Shared/Partials/Navigation/_NavLinks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXE5hdmlnYXRpb25cX05hdkxpbmtzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Shared/Partials/Sections/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFNlY3Rpb25zXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Shared/_Layout.cshtml]
