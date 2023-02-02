@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-4\WebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Shared/Partials/Navigation/_MenuLink.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXE5hdmlnYXRpb25cX01lbnVMaW5rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/Shared/_LayoutCenterScreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDZW50ZXJTY3JlZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HansMattin-Lassei/Documents/Education/CMS22/cms22-aspnet-1/Lektion-4/WebApp/Views/_ViewImports.cshtml]
