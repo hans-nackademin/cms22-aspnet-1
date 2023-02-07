@@ -1,0 +1,13 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    ViewData["Title"] = @Model.Value("pageTitle");
+	Layout = "_Layout.cshtml";
+}
+
+<div class="container">
+    @Model.Value("content")
+    
+    @Model.Value("blocks")
+</div>
