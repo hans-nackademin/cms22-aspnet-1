@@ -1,0 +1,23 @@
+﻿<header>
+    <div class="container">
+        <a class="logotype" asp-controller="Home" asp-action="Index">FIXXO.</a>
+
+        <nav id="menu-links" class="collapse menu-links">
+            <a class="menu-link" asp-controller="Home" asp-action="Index">Home</a>
+            <a class="menu-link" asp-controller="Products" asp-action="Index">Products</a>
+            <a class="menu-link" asp-controller="Contacts" asp-action="Index">Contacts</a>
+        </nav>
+
+        <div class="menu-icons">
+            <nav id="menu-icons-links">
+                <a class="menu-link" asp-controller="Products" asp-action="Search"><i class="fa-regular fa-search"></i></a>
+                <a class="menu-link" asp-controller="Products" asp-action="Compare"><i class="fa-regular fa-code-compare"></i></a>
+                <a class="menu-link" asp-controller="Favorites" asp-action="Index"><i class="fa-regular fa-heart"></i></a>
+                <a class="menu-link" asp-controller="Shopping" asp-action="Index"><i class="fa-regular fa-bag-shopping"></i></a>
+            </nav>
+            <button id="toggle-menu-button" class="menu-link" data-bs-toggle="collapse" data-bs-target="#menu-links">
+                <i class="fa-regular fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>

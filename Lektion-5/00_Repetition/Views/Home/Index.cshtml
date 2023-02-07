@@ -1,0 +1,16 @@
+﻿@using _00_Repetition.Models.Partials;
+@{
+    ViewData["Title"] = "Home";
+
+    var showcase = new Showcase
+    {
+        Title_1 = "Don't Miss This Opportunity",
+        Title_2 = "GET UP TO 40% OFF",
+        Title_3 = "Online shopping free home delivery over $100",
+        ButtonText = "SHOP NOW",
+        ImageUrl = "~/images/showcase-img.png"
+    };
+
+}
+
+<partial name="~/Views/Shared/Partials/_Showcase.cshtml" model="showcase" />

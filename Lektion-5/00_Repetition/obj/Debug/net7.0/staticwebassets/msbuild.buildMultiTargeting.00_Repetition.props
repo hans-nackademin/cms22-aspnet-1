@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\00_Repetition.props" />
+</Project>

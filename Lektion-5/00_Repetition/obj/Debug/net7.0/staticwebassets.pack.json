@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-5\\00_Repetition\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-5\\00_Repetition\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-5\\00_Repetition\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.00_Repetition.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.00_Repetition.props",
+      "PackagePath": "build\\00_Repetition.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.00_Repetition.props",
+      "PackagePath": "buildMultiTargeting\\00_Repetition.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.00_Repetition.props",
+      "PackagePath": "buildTransitive\\00_Repetition.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
