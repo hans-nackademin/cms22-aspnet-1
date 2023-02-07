@@ -27,3 +27,5 @@ C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02
 C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Debug\net7.0\02_WebAppWithServices.pdb
 C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Debug\net7.0\02_WebAppWithServices.genruntimeconfig.cache
 C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Debug\net7.0\ref\02_WebAppWithServices.dll
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Debug\net7.0\02_WebAppWithServices.csproj.CopyComplete

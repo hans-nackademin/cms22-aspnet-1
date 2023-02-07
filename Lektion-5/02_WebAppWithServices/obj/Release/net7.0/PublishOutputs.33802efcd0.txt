@@ -1,0 +1,8 @@
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Release\net7.0\PubTmp\Out\02_WebAppWithServices.exe
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Release\net7.0\PubTmp\Out\02_WebAppWithServices.dll
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Release\net7.0\PubTmp\Out\02_WebAppWithServices.deps.json
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Release\net7.0\PubTmp\Out\02_WebAppWithServices.runtimeconfig.json
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Release\net7.0\PubTmp\Out\02_WebAppWithServices.pdb
+C:\Users\HansMattin-Lassei\Documents\Education\CMS22\cms22-aspnet-1\Lektion-5\02_WebAppWithServices\obj\Release\net7.0\PubTmp\Out\Newtonsoft.Json.dll
