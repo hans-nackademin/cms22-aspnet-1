@@ -1,0 +1,28 @@
+﻿@model IndexViewModel
+
+<!-- showcase -->
+<section class="showcase">
+    <div class="container">
+        <div class="column-1">
+            <div class="content">
+                <div class="title-2">@Model.Showcase.Title_2</div>
+                <div class="title-1">@Model.Showcase.Title_1</div>
+                <div class="title-3">@Model.Showcase.Title_3</div>
+                <a class="btn btn-theme" asp-controller="@Model.Showcase.NavLink.ControllerName" asp-action="@Model.Showcase.NavLink.ActionName">@Model.Showcase.NavLink.Name</a>
+            </div>
+        </div>
+        <div class="column-2">
+            <img src="@Model.Showcase.Image.Source" alt="@Model.Showcase.Image.Alt">
+        </div>
+    </div>
+</section>
+
+<div>
+    @if(Model.Products != null)
+    {
+        foreach(var product in Model.Products)
+        {
+            <p>@product.Name - @product.Rating()</p>
+        }
+    }
+</div>
