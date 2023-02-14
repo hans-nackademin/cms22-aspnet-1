@@ -1,0 +1,11 @@
+﻿@using _03_Fixxo.Contexts;
+@using _03_Fixxo.Models
+@using _03_Fixxo.Models.Forms
+@using _03_Fixxo.ViewModels.Home
+@using Microsoft.AspNetCore.Identity
+
+@inject DataContext _context
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
