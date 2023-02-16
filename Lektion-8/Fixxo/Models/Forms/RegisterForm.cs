@@ -5,21 +5,21 @@ namespace Fixxo.Models.Forms
     public class RegisterForm
     {
         [Required]
-        [Display(Name = "First Name")]
+        [Display(Name = "Your First Name")]
         public string FirstName { get; set; } = string.Empty;
 
         [Required]
-        [Display(Name = "Last Name")]
+        [Display(Name = "Your Last Name")]
         public string LastName { get; set; } = string.Empty;
 
         [Required]
         [EmailAddress]
-        [Display(Name = "E-mail Address")]
+        [Display(Name = "Your E-mail Address")]
         public string Email { get; set; } = string.Empty;
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Your Password")]
         public string Password { get; set; } = string.Empty;
 
         [Required]
@@ -29,14 +29,14 @@ namespace Fixxo.Models.Forms
         public string ConfirmPassword { get; set; } = string.Empty;
 
 
-        [Display(Name = "Street Name")]
-        public string StreetName { get; set; } = string.Empty;
+        [Display(Name = "Your Street Name (optional)")]
+        public string? StreetName { get; set; }
 
-        [Display(Name = "Postal Code")]
-        public string PostalCode { get; set; } = string.Empty;
+        [Display(Name = "Your Postal Code (optional)")]
+        public string? PostalCode { get; set; }
 
-        [Display(Name = "City")]
-        public string City { get; set; } = string.Empty;
+        [Display(Name = "Your City (optional)")]
+        public string? City { get; set; }
 
 
         public string ReturnUrl { get; set; } = "/";

@@ -1,0 +1,52 @@
+﻿@model RegisterViewModel
+@{ 
+    ViewData["Title"] = "Become a Member";
+    Layout = "~/Views/Shared/_Layout_CenterScreen.cshtml"; 
+}
+
+
+<section class="registration-form">
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <form method="post" asp-action="Register" asp-route-returnUrl="@Model.RegistrationForm.ReturnUrl">
+            <div class="registration-form-error-summary">
+                <div asp-validation-summary="ModelOnly" class="error"></div>
+            </div>
+            <div class="registration-form-firstname">
+                <input asp-for="RegistrationForm.FirstName" placeholder="@Html.DisplayNameFor(m => m.RegistrationForm.FirstName)" />
+                <span asp-validation-for="RegistrationForm.FirstName" class="error"></span>
+            </div>
+            <div class="registration-form-lastname">
+                <input asp-for="RegistrationForm.LastName" placeholder="@Html.DisplayNameFor(m => m.RegistrationForm.LastName)" />
+                <span asp-validation-for="RegistrationForm.LastName" class="error"></span>
+            </div>
+            <div class="registration-form-email">
+                <input asp-for="RegistrationForm.Email" placeholder="@Html.DisplayNameFor(m => m.RegistrationForm.Email)" />
+                <span asp-validation-for="RegistrationForm.Email" class="error"></span>
+            </div>
+            <div class="registration-form-password">
+                <input asp-for="RegistrationForm.Password" placeholder="@Html.DisplayNameFor(m => m.RegistrationForm.Password)" />
+                <span asp-validation-for="RegistrationForm.Password" class="error"></span>
+            </div>
+            <div class="registration-form-confirmpassword">
+                <input asp-for="RegistrationForm.ConfirmPassword" placeholder="@Html.DisplayNameFor(m => m.RegistrationForm.ConfirmPassword)" />
+                <span asp-validation-for="RegistrationForm.ConfirmPassword" class="error"></span>
+            </div>
+
+            <div class="registration-form-streetname mt-5">
+                <input asp-for="RegistrationForm.StreetName" placeholder="@Html.DisplayNameFor(m => m.RegistrationForm.StreetName)" />
+                <span asp-validation-for="RegistrationForm.StreetName" class="error"></span>
+            </div>
+            <div class="registration-form-postalcode">
+                <input asp-for="RegistrationForm.PostalCode" placeholder="@Html.DisplayNameFor(m => m.RegistrationForm.PostalCode)" />
+                <span asp-validation-for="RegistrationForm.PostalCode" class="error"></span>
+            </div>
+            <div class="registration-form-city">
+                <input asp-for="RegistrationForm.City" placeholder="@Html.DisplayNameFor(m => m.RegistrationForm.City)" />
+                <span asp-validation-for="RegistrationForm.City" class="error"></span>
+            </div>
+
+            <button class="btn-theme mt-3" type="submit">Submit</button>
+        </form>
+    </div>
+</section>

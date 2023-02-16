@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Fixxo.Models.Forms;
+using Fixxo.Models.Identity;
 
 namespace Fixxo.Services
 {
@@ -6,7 +8,7 @@ namespace Fixxo.Services
     {
         public AutoMapperServices()
         {
-            
+            CreateMap<RegisterForm, AppUser>().ReverseMap();
         }
     }
 }

@@ -1,0 +1,141 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\black-coat.png",
+      "PackagePath": "staticwebassets\\images\\products\\black-coat.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\black-dress.png",
+      "PackagePath": "staticwebassets\\images\\products\\black-dress.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\black-set.png",
+      "PackagePath": "staticwebassets\\images\\products\\black-set.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\black-white-set.png",
+      "PackagePath": "staticwebassets\\images\\products\\black-white-set.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\blue-jacket.png",
+      "PackagePath": "staticwebassets\\images\\products\\blue-jacket.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\blue-set.png",
+      "PackagePath": "staticwebassets\\images\\products\\blue-set.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\blue-tshirt.png",
+      "PackagePath": "staticwebassets\\images\\products\\blue-tshirt.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\brown-sweater.png",
+      "PackagePath": "staticwebassets\\images\\products\\brown-sweater.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\brown-watch.png",
+      "PackagePath": "staticwebassets\\images\\products\\brown-watch.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\card-img.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\card-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\chrome-shoe.png",
+      "PackagePath": "staticwebassets\\images\\products\\chrome-shoe.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\gray-tshirt.png",
+      "PackagePath": "staticwebassets\\images\\products\\gray-tshirt.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\jeans-dress.png",
+      "PackagePath": "staticwebassets\\images\\products\\jeans-dress.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\jeans-set.png",
+      "PackagePath": "staticwebassets\\images\\products\\jeans-set.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\lets-be-img.svg",
+      "PackagePath": "staticwebassets\\images\\products\\lets-be-img.svg"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\multicolor-tshirt.png",
+      "PackagePath": "staticwebassets\\images\\products\\multicolor-tshirt.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\olive-sweater.png",
+      "PackagePath": "staticwebassets\\images\\products\\olive-sweater.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\pamela-reifs-img.svg",
+      "PackagePath": "staticwebassets\\images\\products\\pamela-reifs-img.svg"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\purple-bag.png",
+      "PackagePath": "staticwebassets\\images\\products\\purple-bag.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\red-bag.png",
+      "PackagePath": "staticwebassets\\images\\products\\red-bag.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\red-dress.png",
+      "PackagePath": "staticwebassets\\images\\products\\red-dress.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\showcase-img.png",
+      "PackagePath": "staticwebassets\\images\\products\\showcase-img.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\striped-pants.png",
+      "PackagePath": "staticwebassets\\images\\products\\striped-pants.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\striped-top.png",
+      "PackagePath": "staticwebassets\\images\\products\\striped-top.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\white-sweater.png",
+      "PackagePath": "staticwebassets\\images\\products\\white-sweater.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\products\\winter-boots.png",
+      "PackagePath": "staticwebassets\\images\\products\\winter-boots.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\images\\showcase-img.png",
+      "PackagePath": "staticwebassets\\images\\showcase-img.png"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-8\\Fixxo\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Fixxo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.Fixxo.props",
+      "PackagePath": "build\\Fixxo.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Fixxo.props",
+      "PackagePath": "buildMultiTargeting\\Fixxo.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.Fixxo.props",
+      "PackagePath": "buildTransitive\\Fixxo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
