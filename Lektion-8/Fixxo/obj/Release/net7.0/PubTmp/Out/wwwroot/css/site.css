@@ -5,6 +5,11 @@ html, body {
     color: #222529;
 }
 
+.bg-linear-gradient-gray {
+    background: #f3f3f3;
+    background: linear-gradient(90deg, #f3f3f3 0%, #f5f5f5 100%);
+}
+
 button {
     border: none;
 }
@@ -642,3 +647,103 @@ header {
         width: 70%;
     }
 }
+
+
+
+/* registration form */
+.registration-form {
+    max-width: 1110px;
+}
+
+    .registration-form h1 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    .registration-form form {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "errors"
+            "firstname"
+            "lastname"
+            "email"
+            "password"
+            "confirm"
+            "streetname"
+            "postalcode"
+            "city"
+            "button";
+    }
+
+        .registration-form form .error {
+            font-size: 0.9em;
+            padding: 5px;
+            color: #ff7373;
+        }
+
+        .registration-form form input {
+            width: 100%;
+            padding: 18px 20px;
+            border: 1px solid rgba(112,112,112, 0.4);
+        }
+
+        .registration-form form .registration-form-error-summary {
+            grid-area: errors;
+        }
+
+        .registration-form form .registration-form-firstname {
+            grid-area: firstname;
+        }
+
+        .registration-form form .registration-form-lastname {
+            grid-area: lastname;
+        }
+
+        .registration-form form .registration-form-email {
+            grid-area: email;
+        }
+
+        .registration-form form .registration-form-password {
+            grid-area: password;
+        }
+
+        .registration-form form .registration-form-confirmpassword {
+            grid-area: confirm;
+        }
+
+        .registration-form form .registration-form-streetname {
+            grid-area: streetname;
+        }
+
+        .registration-form form .registration-form-postalcode {
+            grid-area: postalcode;
+        }
+
+        .registration-form form .registration-form-city {
+            grid-area: city;
+        }
+
+        .registration-form form button {
+            grid-area: button;
+        }
+
+
+@media (min-width: 768px) {
+    .registration-form form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "errors errors"
+            "firstname lastname"
+            "email email"
+            "password confirm"
+            "streetname streetname"
+            "postalcode city"
+            "button button";
+    }
+}
+
+

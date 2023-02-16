@@ -21,15 +21,12 @@ namespace Fixxo.Controllers
 
 
 
-
-
-
         [Route("/register")]
         public IActionResult Register(string returnUrl = null!)
         {
             var viewModel = new RegisterViewModel();
             if (returnUrl != null)
-                viewModel.RegistrationForm.ReturnUrl = returnUrl;
+                viewModel.Form.ReturnUrl = returnUrl;
 
             return View(viewModel);
         }
@@ -40,32 +37,55 @@ namespace Fixxo.Controllers
         {
             if (ModelState.IsValid)
             {
-                var appUser = _mapper.Map<AppUser>(viewModel.RegistrationForm);
+                var appUser = _mapper.Map<AppUser>(viewModel.Form);
                 appUser.UserName = appUser.Email;
 
-                var result = await _userManager.CreateAsync(appUser, viewModel.RegistrationForm.Password); 
+                var result = await _userManager.CreateAsync(appUser, viewModel.Form.Password); 
                 if (result.Succeeded)
                 {
-                    var signInResult = await _signInManager.PasswordSignInAsync(appUser, viewModel.RegistrationForm.Password, false, false);
+                    var signInResult = await _signInManager.PasswordSignInAsync(appUser, viewModel.Form.Password, false, false);
                     if (signInResult.Succeeded)
-                    {
-                        return LocalRedirect(viewModel.RegistrationForm.ReturnUrl);
-                    }
+                        return LocalRedirect(viewModel.Form.ReturnUrl);
                     else
-                    {
                         return RedirectToAction("Login");
-                    }
                 }
 
                 ModelState.AddModelError(string.Empty, "Unable to create an Account. Please contact customer support.");
-                return View(viewModel);
-            }
-            else
-            {
-                return View(viewModel);
             }
 
+            return View(viewModel);
             
         }
+
+
+
+
+        [Route("/login")]
+        public IActionResult Login(string returnUrl = null!)
+        {
+            var viewModel = new LoginViewModel();
+            if (returnUrl != null)
+                viewModel.Form.ReturnUrl = returnUrl;
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [Route("/login")]
+        public async Task<IActionResult> Login(LoginViewModel viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(viewModel.Form.Email, viewModel.Form.Password, false, false);
+                if (result.Succeeded)
+                    return LocalRedirect(viewModel.Form.ReturnUrl);
+
+                ModelState.AddModelError(string.Empty, "Incorrect email or password");
+            }
+
+            return View(viewModel);
+
+        }
+
     }
 }
