@@ -4,6 +4,7 @@ namespace Fixxo.ViewModels.Authentication
 {
     public class LoginViewModel
     {
-        public LoginForm Form { get; set; } = new LoginForm();
+        public LoginForm Form { get; set; } = null!;
+        public string ReturnUrl { get; set; } = null!;
     }
 }

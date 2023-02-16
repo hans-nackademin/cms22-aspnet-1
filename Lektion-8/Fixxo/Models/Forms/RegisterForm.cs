@@ -38,7 +38,6 @@ namespace Fixxo.Models.Forms
         [Display(Name = "Your City (optional)")]
         public string? City { get; set; }
 
-
-        public string ReturnUrl { get; set; } = "/";
+        public string UserRole { get; set; } = "User";
     }
 }

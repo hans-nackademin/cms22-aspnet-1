@@ -1,4 +1,9 @@
-﻿<header>
+﻿
+
+
+
+
+<header>
     <div class="container">
         <a class="logotype" asp-controller="Home" asp-action="Index">@ViewData["SiteName"]</a>
 
@@ -7,6 +12,13 @@
                 <a class="menu-link" asp-controller="Home" asp-action="Index">Home</a>
                 <a class="menu-link" asp-controller="Products" asp-action="Index">Products</a>
                 <a class="menu-link" asp-controller="About" asp-action="Index">Contacts</a>
+                
+                @if(User.IsInRole("Administrator"))
+                {
+                    <a class="menu-link" asp-controller="Admin" asp-action="Index">Admin Center</a>
+                }
+
+                
             </nav>
 
             <nav id="menu-icons" class="menu-icons">
@@ -16,11 +28,18 @@
                     <i class="fa-regular fa-code-compare"></i>
                     <span class="menu-badge">0</span>
                 </a>
-                <a class="menu-link" asp-controller="Shopping" asp-action="Favorites"><i class="fa-regular fa-heart"></i></a>
+                
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a class="menu-link" asp-controller="Shopping" asp-action="Favorites"><i class="fa-regular fa-heart"></i></a>
+                }
+
                 <a class="menu-link" asp-controller="Shopping" asp-action="Index">
                     <i class="fa-regular fa-bag-shopping"></i>
                     <span class="menu-badge">0</span>
                 </a>
+
+                <a class="menu-link ms-5" asp-controller="Account" asp-action="Index"><i class="fa-regular fa-user"></i></a>
             </nav>
         </div>
 

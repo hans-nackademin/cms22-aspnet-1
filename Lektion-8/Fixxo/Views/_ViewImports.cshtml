@@ -1,2 +1,9 @@
 ﻿@using Fixxo.ViewModels.Authentication;
+@using Fixxo.Models.Identity;
+@using Microsoft.AspNetCore.Identity;
+
+@inject UserManager<AppUser> UserManager
+@inject SignInManager<AppUser> SignInManager
+@inject RoleManager<IdentityRole> RoleManager
+
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

@@ -5,6 +5,15 @@ html, body {
     color: #222529;
 }
 
+a {
+    color: #ff7373;
+    text-decoration: none;
+}
+    a:hover {
+        color: #222529;
+        text-decoration: underline;
+    }
+
 .bg-linear-gradient-gray {
     background: #f3f3f3;
     background: linear-gradient(90deg, #f3f3f3 0%, #f5f5f5 100%);
@@ -654,6 +663,19 @@ header {
 .registration-form {
     max-width: 1110px;
 }
+    .registration-form .logotype {
+        display: flex;
+        justify-content: center;
+    }
+
+        .registration-form .logotype a {
+            grid-area: logotype;
+            font-size: 35px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #222529;
+        
+        }
 
     .registration-form h1 {
         text-align: center;
@@ -693,7 +715,16 @@ header {
 
         .registration-form form .registration-form-error-summary {
             grid-area: errors;
+            display: flex;
+            justify-content: center;
         }
+
+            .registration-form form .registration-form-error-summary ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+            }
 
         .registration-form form .registration-form-firstname {
             grid-area: firstname;
@@ -731,6 +762,12 @@ header {
             grid-area: button;
         }
 
+        .registration-form form .registration-form-link {
+            grid-area: link;
+            display: flex;
+            justify-content: center;
+        }
+
 
 @media (min-width: 768px) {
     .registration-form form {
@@ -742,8 +779,116 @@ header {
             "password confirm"
             "streetname streetname"
             "postalcode city"
-            "button button";
+            "button button"
+            "link link";
     }
 }
+
+
+/* registration form */
+.login-form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .login-form .logotype {
+        display: flex;
+        justify-content: center;
+    }
+
+        .login-form .logotype a {
+            grid-area: logotype;
+            font-size: 35px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #222529;
+        }
+
+    .login-form h1 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .login-form form {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "errors"
+            "email"
+            "password"
+            "rememberme"
+            "button"
+            "link";
+    }
+
+        .login-form form .error {
+            font-size: 0.9em;
+            padding: 5px;
+            color: #ff7373;
+        }
+
+        .login-form form input {
+            width: 100%;
+            padding: 18px 20px;
+            border: 1px solid rgba(112,112,112, 0.4);
+        }
+
+        .login-form form .login-form-error-summary {
+            grid-area: errors;
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-form form .login-form-error-summary ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+
+
+
+        .login-form form .login-form-email {
+            grid-area: email;
+        }
+
+        .login-form form .login-form-password {
+            grid-area: password;
+        }
+
+        .login-form form .login-form-rememberme {
+            grid-area: rememberme;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+        }
+        .login-form form .login-form-rememberme input {
+            margin-right: 20px;
+            padding: 0;
+            text-align: left;
+            height: 24px;
+            width: 20px;
+
+        }
+        .login-form form .login-form-rememberme label {
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .login-form form button {
+            grid-area: button;
+        }
+
+        .login-form form .login-form-link {
+            grid-area: link;
+            display: flex;
+            justify-content: center;
+        }
 
 

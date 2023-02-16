@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
+using Fixxo.Models.Forms;
 using Fixxo.Models.Identity;
 using Fixxo.ViewModels.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Fixxo.Controllers
 {
@@ -11,25 +13,29 @@ namespace Fixxo.Controllers
         private readonly IMapper _mapper;
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AuthenticationController(IMapper mapper, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        public AuthenticationController(IMapper mapper, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
         {
             _mapper = mapper;
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
-
 
 
         [Route("/register")]
-        public IActionResult Register(string returnUrl = null!)
+        public IActionResult Register(string ReturnUrl = null!)
         {
-            var viewModel = new RegisterViewModel();
-            if (returnUrl != null)
-                viewModel.Form.ReturnUrl = returnUrl;
+            var viewModel = new RegisterViewModel
+            {
+                Form = new RegisterForm(),
+                ReturnUrl = ReturnUrl ?? Url.Content("~/")
+            };
 
             return View(viewModel);
         }
+
 
         [HttpPost]
         [Route("/register")]
@@ -37,15 +43,33 @@ namespace Fixxo.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (!await _userManager.Users.AnyAsync() || !await _roleManager.Roles.AnyAsync())
+                {
+                    try 
+                    { 
+                        await _roleManager.CreateAsync(new IdentityRole("Administrator"));
+                        viewModel.Form.UserRole = "Administrator";
+                    } catch { }
+
+                    try { await _roleManager.CreateAsync(new IdentityRole("User Manager")); } catch { }
+                    try { await _roleManager.CreateAsync(new IdentityRole("Product Manager")); } catch { }
+                    try { await _roleManager.CreateAsync(new IdentityRole("User")); } catch { }
+                    
+                    
+                }
+
                 var appUser = _mapper.Map<AppUser>(viewModel.Form);
                 appUser.UserName = appUser.Email;
 
                 var result = await _userManager.CreateAsync(appUser, viewModel.Form.Password); 
                 if (result.Succeeded)
                 {
+                    // add user to role
+                    await _userManager.AddToRoleAsync(appUser, viewModel.Form.UserRole);
+
                     var signInResult = await _signInManager.PasswordSignInAsync(appUser, viewModel.Form.Password, false, false);
                     if (signInResult.Succeeded)
-                        return LocalRedirect(viewModel.Form.ReturnUrl);
+                        return LocalRedirect(viewModel.ReturnUrl);
                     else
                         return RedirectToAction("Login");
                 }
@@ -61,11 +85,12 @@ namespace Fixxo.Controllers
 
 
         [Route("/login")]
-        public IActionResult Login(string returnUrl = null!)
+        public IActionResult Login(string ReturnUrl = null!)
         {
-            var viewModel = new LoginViewModel();
-            if (returnUrl != null)
-                viewModel.Form.ReturnUrl = returnUrl;
+            var viewModel = new LoginViewModel { 
+                Form = new LoginForm(), 
+                ReturnUrl = ReturnUrl ?? Url.Content("~/")
+            };
 
             return View(viewModel);
         }
@@ -78,13 +103,21 @@ namespace Fixxo.Controllers
             {
                 var result = await _signInManager.PasswordSignInAsync(viewModel.Form.Email, viewModel.Form.Password, false, false);
                 if (result.Succeeded)
-                    return LocalRedirect(viewModel.Form.ReturnUrl);
-
-                ModelState.AddModelError(string.Empty, "Incorrect email or password");
+                    return LocalRedirect(viewModel.ReturnUrl);
             }
 
+            ModelState.AddModelError(string.Empty, "Incorrect email or password");
             return View(viewModel);
 
+        }
+
+        [Route("/logout")]
+        public async Task<IActionResult> Logout()
+        {
+            if(_signInManager.IsSignedIn(User))
+                await _signInManager.SignOutAsync();
+
+            return LocalRedirect("/");
         }
 
     }

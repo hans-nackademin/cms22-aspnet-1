@@ -11,7 +11,7 @@
             <a asp-controller="Home" asp-action="Index">@ViewData["SiteName"]</a>
         </div>
         <h1>@ViewData["Title"]</h1>
-        <form method="post" asp-action="Login" asp-route-returnUrl="@Model.Form.ReturnUrl" novalidate>
+        <form method="post" asp-action="Login" asp-route-ReturnUrl="@Model.ReturnUrl" novalidate>
             <div class="login-form-error-summary">
                 <div asp-validation-summary="ModelOnly" class="error"></div>
             </div>
