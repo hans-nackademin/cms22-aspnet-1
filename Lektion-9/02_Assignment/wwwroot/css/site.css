@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+html, body {
+    font-family: "Roboto", sans-serif;
+}
+
+.registerform {
+    width: 1110px;
+    border: 1px solid rgb(234, 234, 234);
+    padding: 50px;
+}
+
+    .registerform .title .headline {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .registerform .title .underline {
+        margin-top: 5px;
+        margin-bottom: 35px;
+        border-top: 1px solid black;
+        width: 30%;
+    }
+
+    .registerform .form-group {
+        margin-bottom: 20px;
+    }
+
+    .registerform a {
+        font-size: 14px;
+        color: #FA3150;
+        text-decoration: none;
+    }
+
+    .registerform input {
+        border-color: #222121;
+        border-radius: 0;
+    }
