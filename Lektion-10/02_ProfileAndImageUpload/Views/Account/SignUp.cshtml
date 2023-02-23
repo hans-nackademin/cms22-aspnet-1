@@ -1,0 +1,30 @@
+﻿@model SignUpForm
+
+<form asp-action="SignUp" asp-route-ReturnUrl="@Model.ReturnUrl" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <div asp-validation-summary="ModelOnly"></div>
+    </div>
+
+    <div class="mb-3">
+        <input asp-for="FirstName" class="form-control" placeholder="First Name" />
+        <span asp-validation-for="FirstName"></span>
+    </div>
+    <div class="mb-3">
+        <input asp-for="LastName" class="form-control" placeholder="Last Name" />
+        <span asp-validation-for="LastName"></span>
+    </div>
+    <div class="mb-3">
+        <input asp-for="Email" class="form-control" placeholder="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="mb-3">
+        <input asp-for="Password" class="form-control" placeholder="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div class="mb-3">
+        <input asp-for="ProfileImage" class="form-control" accept="image/*" />
+        <span asp-validation-for="ProfileImage"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">SUBMIT</button>
+</form>

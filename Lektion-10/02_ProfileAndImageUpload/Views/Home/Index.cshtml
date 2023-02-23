@@ -1,0 +1,19 @@
+﻿<div>
+    @if (signInManager.IsSignedIn(User))
+    {
+        @if (User.IsInRole("admin"))
+        {
+            <span><a asp-controller="Admin" asp-action="Index">Admin Center</a> | </span>
+        }
+
+        <a asp-controller="Account" asp-action="Index" asp-route-id="@User.Identity!.Name">@User.Identity!.Name</a>
+        <span class="mx-2">|</span>
+        <a asp-controller="Account" asp-action="SignOut">Sign Out</a>
+    }
+    else
+    {
+        <a asp-controller="Account" asp-action="SignIn">Sign In</a>
+        <span class="mx-2">|</span>
+        <a asp-controller="Account" asp-action="SignUp">Sign Up</a>
+    }
+</div>

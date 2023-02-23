@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "wU0ZyxIAaUsGC6QKB3EEnaelgjTH15msD5sgJERErQ4=",
+  "Source": "02_ProfileAndImageUpload",
+  "BasePath": "_content/02_ProfileAndImageUpload",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "02_ProfileAndImageUpload\\wwwroot",
+      "Source": "02_ProfileAndImageUpload",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-10\\02_ProfileAndImageUpload\\wwwroot\\",
+      "BasePath": "_content/02_ProfileAndImageUpload",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-10\\02_ProfileAndImageUpload\\wwwroot\\css\\site.css",
+      "SourceId": "02_ProfileAndImageUpload",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-10\\02_ProfileAndImageUpload\\wwwroot\\",
+      "BasePath": "_content/02_ProfileAndImageUpload",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-10\\02_ProfileAndImageUpload\\wwwroot\\favicon.ico",
+      "SourceId": "02_ProfileAndImageUpload",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-10\\02_ProfileAndImageUpload\\wwwroot\\",
+      "BasePath": "_content/02_ProfileAndImageUpload",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-10\\02_ProfileAndImageUpload\\wwwroot\\js\\site.js",
+      "SourceId": "02_ProfileAndImageUpload",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\CMS22\\cms22-aspnet-1\\Lektion-10\\02_ProfileAndImageUpload\\wwwroot\\",
+      "BasePath": "_content/02_ProfileAndImageUpload",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}

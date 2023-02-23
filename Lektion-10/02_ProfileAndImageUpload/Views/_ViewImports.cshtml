@@ -1,0 +1,9 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Identity;
+@using _02_ProfileAndImageUpload.Models.Contexts;
+@using _02_ProfileAndImageUpload.Models.Forms;
+@using _02_ProfileAndImageUpload.Models.ViewModels.Account;
+
+@inject UserManager<IdentityUser> userManager
+@inject SignInManager<IdentityUser> signInManager
+@inject RoleManager<IdentityRole> roleManager

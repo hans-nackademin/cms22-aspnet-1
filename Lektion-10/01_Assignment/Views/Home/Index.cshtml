@@ -1,0 +1,31 @@
+﻿
+@model IndexViewModel
+
+
+
+<div>
+    @if(signInManager.IsSignedIn(User))
+    {
+        @if(User.IsInRole("admin"))
+        {
+            <span><a asp-controller="Admin" asp-action="Index">Admin Center</a> | </span>
+        }
+
+        <span>@User.Identity!.Name | </span>
+        <a asp-controller="Account" asp-action="SignOut">Sign Out</a>
+    } 
+    else
+    {
+        <a asp-controller="Account" asp-action="SignIn">Sign In</a>
+        <span class="mx-2">|</span>
+        <a asp-controller="Account" asp-action="SignUp">Sign Up</a>
+    }
+</div>
+
+
+<div>
+    <div>@Model.Showcase.Title_2</div>
+    <div>@Model.Showcase.Title_1</div>
+    <a asp-controller="@Model.Showcase.LinkUrl" asp-action="Index">SHOP NOW</a>
+    <img src="~/images/placeholders/@Model.Showcase.ImageUrl" alt="" />
+</div>
