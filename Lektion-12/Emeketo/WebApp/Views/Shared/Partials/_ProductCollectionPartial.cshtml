@@ -1,0 +1,22 @@
+﻿@model ProductCollectionViewModel
+
+<section class="product-collection">
+    <div class="container">
+        <div class="title">@Model.Title</div>
+        <div class="categories">
+            @foreach(var category in Model.Categories)
+            {
+                <div>@category.CategoryName</div>
+            }
+        </div>
+        <div class="products">
+            @foreach(var product in Model.Products)
+            {
+                <partial name="~/Views/Shared/Partials/_ProductPartial.cshtml" model="@product" />
+            }
+        </div>
+        <div class="footer">
+            <button class="btn-light">LOAD MORE</button>
+        </div>
+    </div>
+</section>

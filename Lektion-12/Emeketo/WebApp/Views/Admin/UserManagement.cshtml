@@ -1,0 +1,13 @@
+﻿@model AdminUserManagementViewModel
+
+<section class="user-management">
+    <div class="container">
+        <div>User Management</div>
+        <div class="users">
+            @foreach(var user in Model.Users)
+            {
+                <div>@user.Profile.FirstName @user.Profile.LastName - @user.RoleName | <a asp-action="EditUser" asp-route-id="@user.Id">Ändra</a></div>
+            }
+        </div>
+    </div>
+</section>

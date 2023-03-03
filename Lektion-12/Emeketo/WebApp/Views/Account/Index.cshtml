@@ -1,0 +1,15 @@
+﻿@model AccountIndexViewModel
+
+<section class="profile">
+    <div>@Model.Profile.UserId</div>
+    <div>@Model.Profile.FirstName</div>
+    <div>@Model.Profile.LastName</div>
+    <div>@Model.Profile.Email</div>
+    <div>@Model.Profile.StreetName</div>
+    <div>@Model.Profile.PostalCode</div>
+    <div>@Model.Profile.City</div>
+
+    <div>
+        <a asp-action="Edit">Ändra</a>
+    </div>
+</section>

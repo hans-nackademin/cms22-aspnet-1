@@ -1,0 +1,14 @@
+﻿@model ShowcaseEntity
+
+<section class="showcase">
+    <div class="container">
+        <div class="content">
+            <div class="title-1">@Model.Title_1</div>
+            <div class="title-2">@Model.Title_1</div>
+            <a asp-controller="Products" asp-action="Index" class="btn-theme">SHOP NOW</a>
+        </div>
+        <div class="image">
+            <img src="@Model.ImageName" alt="" />
+        </div>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+﻿@model ProductEntity
+
+<div class="product">
+    <img src="@Model.ImageName" />
+    <div class="product-information">
+        <div class="information">
+            <div class="title">@Model.Name</div>
+            <div class="price">@Model.Price</div>
+        </div>
+        <a class="add-to-cart" asp-controller="Shopping" asp-action="AddToCart"><i class="fa-regular fa-bag-shopping"></i></a>
+    </div>    
+</div>

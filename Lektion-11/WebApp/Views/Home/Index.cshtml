@@ -1,0 +1,24 @@
+﻿@model HomeIndexViewModel
+<div class="mt-5">Best Collection</div>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    @foreach(var product in Model.BestCollection)
+    {
+        <partial name="_CardPartial" model="product" />   
+    }
+</div>
+
+<div class="mt-5">New Products</div>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    @foreach (var product in Model.NewProducts)
+    {
+        <partial name="_CardPartial" model="product" />
+    }
+</div>
+
+<div class="mt-5">Popular Products</div>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    @foreach (var product in Model.PopularProducts)
+    {
+        <partial name="_CardPartial" model="product" />
+    }
+</div>
